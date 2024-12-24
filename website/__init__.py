@@ -9,7 +9,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 def create_app():
     app = Flask(__name__)
-    app.config['SECRET_KEY'] = 'turjjo mir'
+    
     from .views import views
     from .auth import auth
     app.register_blueprint(views, url_prefix='/')
